@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "cUEap7Ft7/i3/PvECk70EdS7hZGSxIlGRGktVa9jSEEdyrfsyg3ghpgBoO1tduOTC8liZrFVhkMB3/11LCgeYQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\luizhenrique\\Documents\\GitHub\\ProgramacaoI\\Prog1_2024-main\\Prog1_2024-main\\240226_01 - Aula 2 + atv\\240226_01.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\luizhenrique\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.15\\microsoft.netcore.app.ref.7.0.15.nupkg.sha512",
+    "C:\\Users\\luizhenrique\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.15\\microsoft.windowsdesktop.app.ref.7.0.15.nupkg.sha512",
+    "C:\\Users\\luizhenrique\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.15\\microsoft.aspnetcore.app.ref.7.0.15.nupkg.sha512",
+    "C:\\Users\\luizhenrique\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.15\\microsoft.netcore.app.host.win-x64.7.0.15.nupkg.sha512"
+  ],
+  "logs": []
+}

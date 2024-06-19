@@ -1,0 +1,30 @@
+C:\Users\joaov\Documents\Programação 2024\Exercicios\240311_02\bin\Debug\net8.0\240311_02.exe
+C:\Users\joaov\Documents\Programação 2024\Exercicios\240311_02\bin\Debug\net8.0\240311_02.deps.json
+C:\Users\joaov\Documents\Programação 2024\Exercicios\240311_02\bin\Debug\net8.0\240311_02.runtimeconfig.json
+C:\Users\joaov\Documents\Programação 2024\Exercicios\240311_02\bin\Debug\net8.0\240311_02.dll
+C:\Users\joaov\Documents\Programação 2024\Exercicios\240311_02\bin\Debug\net8.0\240311_02.pdb
+C:\Users\joaov\Documents\Programação 2024\Exercicios\240311_02\obj\Debug\net8.0\240311_02.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\joaov\Documents\Programação 2024\Exercicios\240311_02\obj\Debug\net8.0\240311_02.AssemblyInfoInputs.cache
+C:\Users\joaov\Documents\Programação 2024\Exercicios\240311_02\obj\Debug\net8.0\240311_02.AssemblyInfo.cs
+C:\Users\joaov\Documents\Programação 2024\Exercicios\240311_02\obj\Debug\net8.0\240311_02.csproj.CoreCompileInputs.cache
+C:\Users\joaov\Documents\Programação 2024\Exercicios\240311_02\obj\Debug\net8.0\240311_02.sourcelink.json
+C:\Users\joaov\Documents\Programação 2024\Exercicios\240311_02\obj\Debug\net8.0\240311_02.dll
+C:\Users\joaov\Documents\Programação 2024\Exercicios\240311_02\obj\Debug\net8.0\refint\240311_02.dll
+C:\Users\joaov\Documents\Programação 2024\Exercicios\240311_02\obj\Debug\net8.0\240311_02.pdb
+C:\Users\joaov\Documents\Programação 2024\Exercicios\240311_02\obj\Debug\net8.0\240311_02.genruntimeconfig.cache
+C:\Users\joaov\Documents\Programação 2024\Exercicios\240311_02\obj\Debug\net8.0\ref\240311_02.dll
+C:\Users\joaov\Documents\Programação 2024\Exercicios\240311_02 - Atv Aula 4\bin\Debug\net8.0\240311_02.exe
+C:\Users\joaov\Documents\Programação 2024\Exercicios\240311_02 - Atv Aula 4\bin\Debug\net8.0\240311_02.deps.json
+C:\Users\joaov\Documents\Programação 2024\Exercicios\240311_02 - Atv Aula 4\bin\Debug\net8.0\240311_02.runtimeconfig.json
+C:\Users\joaov\Documents\Programação 2024\Exercicios\240311_02 - Atv Aula 4\bin\Debug\net8.0\240311_02.dll
+C:\Users\joaov\Documents\Programação 2024\Exercicios\240311_02 - Atv Aula 4\bin\Debug\net8.0\240311_02.pdb
+C:\Users\joaov\Documents\Programação 2024\Exercicios\240311_02 - Atv Aula 4\obj\Debug\net8.0\240311_02.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\joaov\Documents\Programação 2024\Exercicios\240311_02 - Atv Aula 4\obj\Debug\net8.0\240311_02.AssemblyInfoInputs.cache
+C:\Users\joaov\Documents\Programação 2024\Exercicios\240311_02 - Atv Aula 4\obj\Debug\net8.0\240311_02.AssemblyInfo.cs
+C:\Users\joaov\Documents\Programação 2024\Exercicios\240311_02 - Atv Aula 4\obj\Debug\net8.0\240311_02.csproj.CoreCompileInputs.cache
+C:\Users\joaov\Documents\Programação 2024\Exercicios\240311_02 - Atv Aula 4\obj\Debug\net8.0\240311_02.sourcelink.json
+C:\Users\joaov\Documents\Programação 2024\Exercicios\240311_02 - Atv Aula 4\obj\Debug\net8.0\240311_02.dll
+C:\Users\joaov\Documents\Programação 2024\Exercicios\240311_02 - Atv Aula 4\obj\Debug\net8.0\refint\240311_02.dll
+C:\Users\joaov\Documents\Programação 2024\Exercicios\240311_02 - Atv Aula 4\obj\Debug\net8.0\240311_02.pdb
+C:\Users\joaov\Documents\Programação 2024\Exercicios\240311_02 - Atv Aula 4\obj\Debug\net8.0\240311_02.genruntimeconfig.cache
+C:\Users\joaov\Documents\Programação 2024\Exercicios\240311_02 - Atv Aula 4\obj\Debug\net8.0\ref\240311_02.dll
