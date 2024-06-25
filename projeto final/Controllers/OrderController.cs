@@ -71,7 +71,8 @@ namespace FoodApp.Controllers
                 using(StreamReader sr = new StreamReader(filePath))
                 {
                     string line = string.Empty;
-                    while((line = sr.ReadLine()) != null)
+#pragma warning disable CS8600 
+                    while ((line = sr.ReadLine()) != null)
                     {
                         lineCountTotal++; 
 
@@ -86,6 +87,7 @@ namespace FoodApp.Controllers
                             lineCountSuccess++;
                         }
                     }
+#pragma warning restore CS8600 
                 }
                 
             }

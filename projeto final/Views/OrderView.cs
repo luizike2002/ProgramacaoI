@@ -1,199 +1,105 @@
-using FoodApp.Models;
 using System;
 using System.Collections.Generic;
-using System.IO;
+using FoodApp.Models;
 
-namespace FoodApp.Utils
+#pragma warning disable IDE0130 
+namespace FoodApp
+#pragma warning restore IDE0130 
+
 {
-    class Program
+    public class OrderView(List<Order> orders, List<Customer> customers, List<Product> products)
     {
-        static void Main(string[] args)
+        private readonly List<Order> orders = orders;
+#pragma warning disable IDE0052 
+
+        private readonly List<Customer> customers = customers;
+#pragma warning restore IDE0052 
+
+        private readonly List<Product> products = products;
+
+        public void DisplayMenu()
         {
-            List<Customer> customers = new List<Customer>();
-            List<Product> products = new List<Product>();
-            List<Order> orders = new List<Order>();
+            Console.WriteLine("**********************");
+            Console.WriteLine("euComida - Pedidos");
+            Console.WriteLine("**********************");
+            Console.WriteLine("1 - Adicionar Pedido");
+            Console.WriteLine("2 - Listar Pedidos");
+            Console.WriteLine("0 - Voltar");
 
-            bool continueRunning = true;
+            int choice = Convert.ToInt32(Console.ReadLine());
 
-            do
+            switch (choice)
             {
-                Console.WriteLine("**********************");
-                Console.WriteLine("euComida");
-                Console.WriteLine("**********************");
-                Console.WriteLine("1 - Clientes");
-                Console.WriteLine("2 - Produtos");
-                Console.WriteLine("3 - Pedidos");
-                Console.WriteLine("4 - Exportar dados para arquivo JSON");
-                Console.WriteLine("5 - Importar dados de arquivo JSON");
-                Console.WriteLine("0 - SAIR");
+                case 1:
+                    AddOrder();
+                    break;
+                case 2:
+                    ListOrders();
+                    break;
+                case 0:
+                    return;
+                default:
+                    Console.WriteLine("Opção inválida.");
+                    break;
+            }
+        }
 
-                int menuOption = 0;
+        private void AddOrder()
+        {
+            Console.WriteLine("\nCriar Novo Pedido:");
+            Console.Write("ID do Pedido: ");
+            int orderId = Convert.ToInt32(Console.ReadLine());
+            Console.Write("ID do Cliente: ");
+            int customerId = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Nome do Cliente: ");
+#pragma warning disable CS8600 
 
-                try
+            string customerName = Console.ReadLine();
+#pragma warning restore CS8600 
+
+
+            List<int> productIds = new List<int>();
+            Console.WriteLine("IDs dos Produtos (separados por espaço): ");
+#pragma warning disable CS8602 
+
+            string[] productIdStrings = Console.ReadLine().Split(' ');
+#pragma warning restore CS8602 
+
+            foreach (var id in productIdStrings)
+            {
+                productIds.Add(Convert.ToInt32(id));
+            }
+
+#pragma warning disable CS8601 
+
+            orders.Add(new Order { OrderId = orderId, CustomerId = customerId, CustomerName = customerName, ProductIds = productIds, OrderDate = DateTime.Now });
+#pragma warning restore CS8601 
+
+            Console.WriteLine("Pedido criado com sucesso!\n");
+        }
+
+        private void ListOrders()
+        {
+            Console.WriteLine("**********************");
+            Console.WriteLine("Lista de Pedidos");
+            Console.WriteLine("**********************");
+            foreach (var order in orders)
+            {
+                Console.WriteLine($"ID do Pedido: {order.OrderId}, ID do Cliente: {order.CustomerId}, Nome do Cliente: {order.CustomerName}, Data: {order.OrderDate}");
+                Console.WriteLine("Produtos:");
+#pragma warning disable CS8602 
+
+                foreach (var productId in order.ProductIds)
                 {
-                    menuOption = Convert.ToInt32(Console.ReadLine());
-
-                    switch (menuOption)
+                    var product = products.Find(p => p.ProductId == productId);
+                    if (product != null)
                     {
-                        case 1:
-                            CustomerView customerView = new CustomerView(customers);
-                            customerView.DisplayMenu();
-                            break;
-
-                        case 2:
-                            ProductView productView = new ProductView(products);
-                            productView.DisplayMenu();
-                            break;
-
-                        case 3:
-                            OrderView orderView = new OrderView(orders, customers, products);
-                            orderView.DisplayMenu();
-                            break;
-
-                        case 4:
-                            ExportData(customers, orders);
-                            break;
-
-                        case 5:
-                            ImportData(customers, orders);
-                            break;
-
-                        case 0:
-                            continueRunning = false;
-                            Console.WriteLine("Obrigado e volte sempre!");
-                            break;
-
-                        default:
-                            Console.WriteLine("Opção inválida.");
-                            break;
+                        Console.WriteLine($"- {product.Name} (R$ {product.Price})");
                     }
                 }
-                catch (FormatException)
-                {
-                    Console.WriteLine("Opção inválida. Digite um número correspondente ao menu.");
-                }
-                catch (Exception ex)
-                {
-                    Console.WriteLine($"Erro: {ex.Message}");
-                }
+#pragma warning restore CS8602 
 
-            } while (continueRunning);
-        }
-
-        static void ExportData(List<Customer> customers, List<Order> orders)
-        {
-            try
-            {
-                string filePath = "data.json";
-
-                Utils.ExportToFile(filePath, customers, orders);
-
-                Console.WriteLine($"Dados exportados para o arquivo {filePath}");
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"Erro ao exportar dados: {ex.Message}");
-            }
-        }
-
-        static void ImportData(List<Customer> customers, List<Order> orders)
-        {
-            try
-            {
-                string filePath = "data.json";
-
-                Utils.ImportFromFile(filePath, customers, orders);
-
-                Console.WriteLine($"Dados importados do arquivo {filePath}");
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"Erro ao importar dados: {ex.Message}");
             }
         }
     }
-
-    internal class OrderView
-    {
-        private List<Order> orders;
-        private List<Customer> customers;
-        private List<Product> products;
-
-        public OrderView(List<Order> orders, List<Customer> customers, List<Product> products)
-        {
-            this.orders = orders;
-            this.customers = customers;
-            this.products = products;
-        }
-
-        internal void DisplayMenu()
-        {
-            throw new NotImplementedException();
-        }
-
-    }
-
-
-    public static class Utils
-    {
-        public static void ExportToFile(string filePath, List<Customer> customers, List<Order> orders)
-        {
-            using (StreamWriter file = File.CreateText(filePath))
-            {
-                JsonSerializer serializer = new JsonSerializer();
-                serializer.Serialize(file, new { customers, orders });
-            }
-        }
-
-        public static void ImportFromFile(string filePath, List<Customer> customers, List<Order> orders)
-        {
-            using (StreamReader file = File.OpenText(filePath))
-            {
-                JsonSerializer serializer = new JsonSerializer();
-                var data = (JObject)serializer.Deserialize(file, typeof(JObject));
-
-            
-                JArray customersArray = (JArray)data["Customers"];
-                customers.Clear(); 
-                customers.AddRange(customersArray.ToObject<List<Customer>>());
-
-                JArray ordersArray = (JArray)data["Orders"];
-                orders.Clear(); 
-                orders.AddRange((IEnumerable<Order>)ordersArray.ToObject<List<Order>>());
-            }
-        }
-    }
-
-    internal class JObject
-    {
-    }
-
-
-    internal class JArray
-    {
-        internal IEnumerable<Customer> ToObject<T>()
-        {
-            throw new NotImplementedException();
-        }
-
-    }
-
-
-    internal class JsonSerializer
-    {
-        public JsonSerializer()
-        {
-        }
-
-        internal JObject Deserialize(StreamReader file, Type type)
-        {
-            throw new NotImplementedException();
-        }
-
-        internal void Serialize(StreamWriter file, object value)
-        {
-            throw new NotImplementedException();
-        }
-    }
-
 }

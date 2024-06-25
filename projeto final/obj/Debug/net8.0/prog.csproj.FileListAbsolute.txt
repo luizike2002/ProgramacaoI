@@ -26,3 +26,21 @@ C:\Users\luizhenrique\Downloads\ProgramacaoI-main\ProgramacaoI-main\Prog_0817202
 C:\Users\luizhenrique\Downloads\ProgramacaoI-main\ProgramacaoI-main\Prog_08172024\bin\Debug\net8.0\prog.pdb
 C:\Users\luizhenrique\Downloads\ProgramacaoI-main\ProgramacaoI-main\Prog_08172024\obj\Debug\net8.0\prog.genruntimeconfig.cache
 C:\Users\luizhenrique\Downloads\ProgramacaoI-main\ProgramacaoI-main\Prog_08172024\obj\Debug\net8.0\ref\prog.dll
+C:\Users\luizhenrique\Documents\GitHub\ProgramacaoI\projeto final\obj\Debug\net8.0\prog.csproj.AssemblyReference.cache
+C:\Users\luizhenrique\Documents\GitHub\ProgramacaoI\projeto final\obj\Debug\net8.0\prog.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\luizhenrique\Documents\GitHub\ProgramacaoI\projeto final\obj\Debug\net8.0\prog.AssemblyInfoInputs.cache
+C:\Users\luizhenrique\Documents\GitHub\ProgramacaoI\projeto final\obj\Debug\net8.0\prog.AssemblyInfo.cs
+C:\Users\luizhenrique\Documents\GitHub\ProgramacaoI\projeto final\obj\Debug\net8.0\prog.csproj.CoreCompileInputs.cache
+C:\Users\luizhenrique\Documents\GitHub\ProgramacaoI\projeto final\obj\Debug\net8.0\prog.sourcelink.json
+C:\Users\luizhenrique\Documents\GitHub\ProgramacaoI\projeto final\obj\Debug\net8.0\prog.dll
+C:\Users\luizhenrique\Documents\GitHub\ProgramacaoI\projeto final\obj\Debug\net8.0\refint\prog.dll
+C:\Users\luizhenrique\Documents\GitHub\ProgramacaoI\projeto final\obj\Debug\net8.0\prog.pdb
+C:\Users\luizhenrique\Documents\GitHub\ProgramacaoI\projeto final\bin\Debug\net8.0\prog.exe
+C:\Users\luizhenrique\Documents\GitHub\ProgramacaoI\projeto final\bin\Debug\net8.0\prog.deps.json
+C:\Users\luizhenrique\Documents\GitHub\ProgramacaoI\projeto final\bin\Debug\net8.0\prog.runtimeconfig.json
+C:\Users\luizhenrique\Documents\GitHub\ProgramacaoI\projeto final\bin\Debug\net8.0\prog.dll
+C:\Users\luizhenrique\Documents\GitHub\ProgramacaoI\projeto final\bin\Debug\net8.0\prog.pdb
+C:\Users\luizhenrique\Documents\GitHub\ProgramacaoI\projeto final\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\luizhenrique\Documents\GitHub\ProgramacaoI\projeto final\obj\Debug\net8.0\prog.csproj.CopyComplete
+C:\Users\luizhenrique\Documents\GitHub\ProgramacaoI\projeto final\obj\Debug\net8.0\prog.genruntimeconfig.cache
+C:\Users\luizhenrique\Documents\GitHub\ProgramacaoI\projeto final\obj\Debug\net8.0\ref\prog.dll
